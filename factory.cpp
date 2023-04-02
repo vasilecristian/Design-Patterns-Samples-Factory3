@@ -1,18 +1,7 @@
 #include <iostream>
 
 
-/* Create Platform factory, that can create support for different platforms.
-*
-*   Platform is a factory that can create different implementations for each platform. The IPlatform is an interface .
-*
-*   This Example have an issue with the enum class PlatformType. The SOLID principle is 
-*   not meet (aka Open for extension Closed for modifications principle) since when you want 
-*   to extent the enum by adding new types of platforms the enum must be changed.
-*   
-*   Instead, enum i have used class with static members. When you want to add more platforms
-*   is enough to use inheritance (derive the Platforms class) and create a new Factory function
-*   that handle the new types (along with the old types).
-*
+/* Create a Furniture Abstract Factory
 */
 
 class IChair
